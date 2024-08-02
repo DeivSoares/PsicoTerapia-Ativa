@@ -76,6 +76,10 @@ ScrollReveal({
 #services, 
 #services header, 
 #services .card,
+#benefits, 
+#benefits header, 
+#benefits .card,
 #about,
 #about header,
-#about .content`);
+#about .content,
+#teste`);

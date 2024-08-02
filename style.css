@@ -122,7 +122,7 @@ section .content p {
 
 /*===========================================Custom Colors========================================*/
 
-#services .card circle {
+#services .card circle, #benefits .card circle{
   fill: var(--brand-light);
 }
 
@@ -334,17 +334,17 @@ body.menu-expanded button svg path {
 
 /*==============================================SERVICES===========================================*/
 
-#services h2 {
+#services h2, #benefits h2 {
   margin-bottom: 6rem;
 }
 
-#services .cards {
+#services .cards, #benefits .cards {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
-#services .card {
+#services .card, #benefits .card {
   background: white;
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
@@ -352,14 +352,14 @@ body.menu-expanded button svg path {
   text-align: left;
 }
 
-#services .card h3 {
+#services .card h3, #benefits .card h3 {
   margin-block: 1.6rem;
 }
 
 /*==============================================ABOUT==============================================*/
 
 #about {
-  text-align: left;
+  text-align: justify;
   background-color: var(--brand-beige);
 }
 
@@ -469,6 +469,20 @@ footer .social-links {
 
   section {
     padding-block: 16rem;
+  }
+
+  section#insta{
+    width: 50%;
+    padding: 0;
+    margin: auto;
+  }
+
+  section#services{
+    padding-bottom: 5rem;
+  }
+
+  section#benefits{
+    padding: 0;
   }
 
   section header h2 {
@@ -649,20 +663,24 @@ footer .social-links {
   }
 
   /*==============================================SERVICES===========================================*/
-  #services h2 {
+  #services h2, #benefits h2 {
     width: 47rem;
     margin-inline: auto;
   }
 
-  #services .cards {
+  #services .cards, #benefits .cards {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 4rem;
   }
 
-  #services .card {
+  #services .card, #benefits .card {
     width: 30%;
     flex-grow: 1;
+  }
+
+  #benefits .card {
+    text-align: center;
   }
 
   /*==============================================ABOUT===========================================*/
