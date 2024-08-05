@@ -635,6 +635,7 @@ footer .social-links {
 
   #home .content p {
     font-size: 1.8rem;
+    text-align: justify;
   }
 
   #home .stats {
