@@ -122,7 +122,8 @@ section .content p {
 
 /*===========================================Custom Colors========================================*/
 
-#services .card circle, #benefits .card circle{
+#services .card circle,
+#benefits .card circle {
   fill: var(--brand-light);
 }
 
@@ -334,17 +335,20 @@ body.menu-expanded button svg path {
 
 /*==============================================SERVICES===========================================*/
 
-#services h2, #benefits h2 {
+#services h2,
+#benefits h2 {
   margin-bottom: 6rem;
 }
 
-#services .cards, #benefits .cards {
+#services .cards,
+#benefits .cards {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
-#services .card, #benefits .card {
+#services .card,
+#benefits .card {
   background: white;
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
@@ -352,7 +356,8 @@ body.menu-expanded button svg path {
   text-align: left;
 }
 
-#services .card h3, #benefits .card h3 {
+#services .card h3,
+#benefits .card h3 {
   margin-block: 1.6rem;
 }
 
@@ -467,21 +472,25 @@ footer .social-links {
     grid-area: B;
   }
 
+  .col-b #mobile {
+    display: none;
+  }
+
   section {
     padding-block: 16rem;
   }
 
-  section#insta{
+  section#insta {
     width: 50%;
     padding: 0;
     margin: auto;
   }
 
-  section#services{
+  section#services {
     padding-bottom: 5rem;
   }
 
-  section#benefits{
+  section#benefits {
     padding: 0;
   }
 
@@ -664,18 +673,21 @@ footer .social-links {
   }
 
   /*==============================================SERVICES===========================================*/
-  #services h2, #benefits h2 {
+  #services h2,
+  #benefits h2 {
     width: 47rem;
     margin-inline: auto;
   }
 
-  #services .cards, #benefits .cards {
+  #services .cards,
+  #benefits .cards {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 4rem;
   }
 
-  #services .card, #benefits .card {
+  #services .card,
+  #benefits .card {
     width: 30%;
     flex-grow: 1;
   }
@@ -745,5 +757,9 @@ footer .social-links {
   #contact .wrapper .col-b iframe {
     width: 100%;
     height: 40rem;
+  }
+
+  .col-b #desktop {
+    display: none;
   }
 }
