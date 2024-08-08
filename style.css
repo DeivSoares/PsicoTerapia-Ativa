@@ -472,9 +472,9 @@ footer .social-links {
     grid-area: B;
   }
 
-  .col-b #mobile {
+  /* .col-b #mobile {
     display: none;
-  }
+  } */
 
   section {
     padding-block: 16rem;
@@ -759,7 +759,7 @@ footer .social-links {
     height: 40rem;
   }
 
-  .col-b #mobile {
+  /* .col-b #desktop {
     display: none;
-  }
+  } */
 }
