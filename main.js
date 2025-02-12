@@ -13,17 +13,13 @@ function onScroll() {
 function activateMenuAtCurrentSection(section) {
     const targetLine = scrollY + innerHeight / 2;
 
-    // Verificar se a seção passou da linha
-    //Quais dados vou precisar?
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
     const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop;
 
-    // Verificar se a base está abaixo da linha alvo
     const sectionEndsAt = sectionTop + sectionHeight;
     const sectionEndPassedTargetLine = sectionEndsAt <= targetLine;
 
-    // Limites da Seção
     const sectionBoundaries = sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine;
 
     const sectionId = section.getAttribute('id');
